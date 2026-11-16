@@ -6,8 +6,7 @@ discount = fullprice * sen / 100
 vaten = fullprice * 0.07
 net_price = fullprice - sen + vaten
 fullprice_sen = f"ราคาสินค้า {fullprice:.2f} บาท ส่วนลด {sen:.2f}%" 
-sen_ = discount 
-st.header(f"• ส่วนลด ({})")
+st.header(f"• ส่วนลด ({sen}%)"): -{sen:.2f} บาท")
 st.header(f"• ภาษีมูลค่าเพิ่ม (VAT 7%): **{vaten:.2f}** บาท")
 st.header(f"• ราคาสุทธิ: {net_price:.2f} บาท")
 st.divider()
